@@ -1,26 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>verstka</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width"> 
+   <link rel="stylesheet" href="style.css">   
+   <title>CV Vladislava Bohdanaua</title>
+   
 </head>
-<body>
-<img src='https://avatars.githubusercontent.com/u/78262329?s=400&u=c234b24c3d5abc24063d152141adcfe8cf31e974&v=4' height="100" width="100",alt='Аватарка' id="Avatar">
-<div id="container">
-<div id="content">
-<h1>1.Vladislav Bohdanau.</h1>
-<h2>2.Vk: https://vk.com/saldusnoname; Discord: Vulpis#0388. </h2>
-<h2>3.My goal is to learn what I am interested in, to develop in this area, to learn something new and to work with good people. I strive for excellence and development of myself.</h2>
-<h2>4.JavaScript, React.</h2>
-<h3>5.Code: </h3>
-<h4> var s = "Light JavaScript";</h4>
-<h4> alert(s); </h4>
-<h1>6.Junior Dev.</h1>
-<h1>7.English course:Streamline; JS / FRONT-END: RSschool.</h1>
-<h1>8.English level (A2).</h1>
-</div>
-<div id="clear">
-</div>
-</div>
+
+<body class="mainblock">   
+      <header class="header">    
+         <div class="container"> 
+         <div class="header__body">
+            <a href="#" class="header__logo">
+               <img  src="img/icon.jpg" alt="">
+            </a>
+            <div class="header__burger">
+               <span></span>
+            </div>
+            <nav class="header__menu">
+               <ul class="header__list">
+                  <li>
+                     <a href="#contacts" class="header__link">Contacts</a>
+                  </li>
+                  <li>
+                     <a href="#about_me" class="header__link">About me</a>
+                  </li>
+                  <li>
+                     <a href="#my_skills" class="header__link">My skills</a>
+                  </li>
+                  <li>
+                     <a href="#sample_code" class="header__link">Sample code</a>
+                  </li>
+                  <li>
+                     <a href="#work_expirience" class="header__link">Work expirience</a>
+                  </li>
+                  <li>
+                     <a href="#education" class="header__link">Education</a>
+                  </li>
+                  <li>
+                     <a href="#english" class="header__link">English</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         
+         
+      </div>    
+      </header>
+      
+      <main>         
+         <section class="content">
+
+         <img class="photostyle" src="img/photo.jpg" alt="Vladislav Bohdanau">
+         <h1> Vladislav Bohdanau </h1>
+            <h2 id="contacts"> Contact information </h2>
+
+            <ul> 
+               <li> My Phone number: +375291108262 </li>
+               <li> My Email: vlad30303026@gmail.com </li>
+               <li> My Discord: Vulpis#0388  </li>
+               <li> My vk: https://vk.com/saldusnoname</li>
+            </ul>
+
+            
+
+            <article> <h2 id="about_me"> Information about me</h2>
+               I want to gain new experience, learn how to develop 
+               front-end applications and at the end of the course 
+               to receive an offer from a junior front-end developer. 
+               I have no experience in front-end development yet. 
+               I am able to achieve my goals, i know this
+               P.s I didn't have much time to make a beautiful resume, I apologize</article>
+            <h2 id="my_skills">My skills</h2>
+
+            <ul>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+               <li>C#</li>
+               <li>C++</li>
+               <li>React</li>
+            </ul>
+
+            <h2 id="sample_code"> Sample code </h2>
+
+            <pre class="highlight">
+               function deleteDigit(n) {
+                  const str = String(n);
+                  const iter = (index, acc) => {
+                    if (index === str.length) {
+                      return acc;
+                    }
+                    return iter(index + 1, [
+                      ...acc,
+                      Number(str.substring(0, index) +
+                        str.substring(index + 1)),
+                    ]);
+                  };
+                  return Math.max(...iter(0, []));
+               }
+            </pre>
+
+            <h2 id="work_expirience"> Work experience </h2>
+
+            <p> I dont have work expirience :( </p>
+
+            <h2 id="education"> Education </h2>
+
+            <p> Self-study </p>
+         
+            <h2 id="english"> English </h2>
+            <p> I speak English at B2 level. </p>
+         
+         </section>
+
+         <footer>
+            <hr>
+            
+            <ul class="footer_list">
+               
+               <li><time> 20-09-2021 </time></li>
+               <li><a href="https://github.com/VulpisxD"><img class="logo" src="./img/github.png" alt="Github logo"></a></li>
+               <li><a href="https://rs.school/js/"><img class="logo" src="./img/rs_school_js.svg" alt="RSSCHOOL"></a></li>
+               
+            </ul>
+         </footer>
+
+
+      </main>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>
